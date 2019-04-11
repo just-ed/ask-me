@@ -12,7 +12,12 @@ class User < ApplicationRecord
   validates :email, presence: true, uniqueness: true, format: { with: URI::MailTo::EMAIL_REGEXP }
   validates :password, presence: true, on: :create, confirmation: true
 
+  before_validation :downcase_username
   before_save :encrypt_password
+
+  def downcase_username
+    self.username = username.downcase
+  end
 
   def encrypt_password
     if password.present?
