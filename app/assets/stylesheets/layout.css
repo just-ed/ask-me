@@ -37,10 +37,6 @@ a {
   padding: 10px;
 }
 
-.rounded {
-  border-radius: 5px;
-}
-
 .flash-alert {
   font-size: 20px;
   color: #dc554f;
