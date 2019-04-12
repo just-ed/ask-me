@@ -29,7 +29,7 @@ ActiveRecord::Schema.define(version: 2019_04_11_195030) do
     t.string "email"
     t.string "password_hash"
     t.string "password_salt"
-    t.string "avatar"
+    t.string "avatar_url"
   end
 
 end
