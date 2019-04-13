@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_04_13_211642) do
+ActiveRecord::Schema.define(version: 2019_04_13_223348) do
 
   create_table "friendly_id_slugs", force: :cascade do |t|
     t.string "slug", null: false
@@ -42,6 +42,7 @@ ActiveRecord::Schema.define(version: 2019_04_13_211642) do
     t.string "password_salt"
     t.string "avatar_url"
     t.string "slug"
+    t.string "bg_color"
     t.index ["slug"], name: "index_users_on_slug", unique: true
   end
 

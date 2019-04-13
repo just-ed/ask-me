@@ -26,6 +26,8 @@ class User < ApplicationRecord
             presence: true, on: :create,
             confirmation: true
 
+  validates :bg_color, format: { with: /\A#([\da-f]{3}){1,2}\z/i }, allow_blank: true
+
   before_validation :downcase_username
   before_save :encrypt_password
 
