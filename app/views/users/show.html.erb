@@ -11,6 +11,10 @@
     @<%= @user.username %>
   </h2>
 
+  <div class="buffer-both">
+    <%= link_to 'Edit profile', edit_user_path(@user) %>
+  </div>
+
   <div class="user-ask-button container text-center">
     <%= link_to "Ask me", '', class: 'button button-light', id: 'ask-button' %>
   </div>
@@ -51,11 +55,13 @@
 </div>
 
 <div class="column-3-4">
-  <div class="user-questions buffer-both">
-    <div class="questions-list">
-      <% @questions.each do |question| %>
-        <%= render partial: 'questions/question', object: question %>
-      <% end %>
+  <% if @questions.any? %>
+    <div class="user-questions buffer-both">
+      <div class="questions-list">
+        <% @questions.each do |question| %>
+          <%= render partial: 'questions/question', object: question %>
+        <% end %>
+      </div>
     </div>
-  </div>
+  <% end %>
 </div>
