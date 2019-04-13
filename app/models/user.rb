@@ -1,6 +1,9 @@
 require 'openssl'
 
 class User < ApplicationRecord
+  extend FriendlyId
+  friendly_id :username, use: :slugged
+
   ITERATIONS = 20_000
   DIGEST = OpenSSL::Digest::SHA256.new
 
