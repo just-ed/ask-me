@@ -20,7 +20,7 @@ class UsersController < ApplicationController
     if @user.save
       redirect_to root_url, notice: 'Welcome! :)'
     else
-      render 'new'
+      render :new
     end
   end
 
@@ -31,7 +31,7 @@ class UsersController < ApplicationController
     if @user.update(user_params)
       redirect_to user_path(@user), notice: 'Profile successfully updated :)'
     else
-      render 'edit'
+      render :edit
     end
   end
 
