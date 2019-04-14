@@ -10,6 +10,7 @@ class User < ApplicationRecord
   attr_accessor :password
 
   has_many :questions
+  has_many :authored_questions, class_name: 'Question', foreign_key: 'author_id'
 
   validates :username,
             presence: true,
