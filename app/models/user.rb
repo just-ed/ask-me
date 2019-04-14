@@ -9,8 +9,8 @@ class User < ApplicationRecord
 
   attr_accessor :password
 
-  has_many :questions
-  has_many :authored_questions, class_name: 'Question', foreign_key: 'author_id'
+  has_many :questions, dependent: :destroy
+  has_many :authored_questions, class_name: 'Question', foreign_key: 'author_id', dependent: :nullify
 
   validates :username,
             presence: true,
