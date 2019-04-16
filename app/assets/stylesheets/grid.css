@@ -29,6 +29,10 @@
   margin-top: 40px;
 }
 
+.buffer-right-small {
+  margin-right: 10px;
+}
+
 .container {
   max-width: 960px;
   margin-left: auto;

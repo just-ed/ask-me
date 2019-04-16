@@ -49,6 +49,8 @@
 
       <div class="form-action buffer-top">
         <%= f.submit 'Save', class: 'button button-dark button-small' %>
+        or
+        <%= link_to 'return', user_path(current_user) %>
       </div>
     <% end %>
 

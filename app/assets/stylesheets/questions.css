@@ -3,7 +3,8 @@
 }
 
 .question {
-  background: white;
+  background: #fff;
+  border-radius: 5px;
 }
 
 .question-content {
@@ -20,15 +21,23 @@
 }
 
 .question-text {
-  color: #005a55;
+  color: #2e2f41;
 }
 
 .question-answer {
+  color: #005a55;
+}
+
+.question-info {
+  font-size: 12px;
+}
+
+.question-author {
+  color: #005a55;
 }
 
 .question-date {
   color: #a0a0a0;
-  font-size: 12px;
 }
 
 .question-actions {

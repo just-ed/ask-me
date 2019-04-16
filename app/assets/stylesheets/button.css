@@ -1,6 +1,6 @@
 .button {
   display: inline-block;
-  border-radius: 3px;
+  border-radius: 5px;
   font-size: 16px;
   text-decoration: none;
   padding: 15px 30px;
@@ -10,27 +10,42 @@
 }
 
 .button-dark {
-  background: #2e2f41;
-  color: #fff;
+  background: rgba(46, 47, 65, 0.8);
+  color: #e7eced;
+  box-shadow: 0 0 3px #e7eced;
 }
 
 .button-green {
   background: #005a55;
-  color: #fff;
+  color: #e7eced;
+  box-shadow: 0 0 3px #e7eced;
 }
 
 .button-red {
   background: #a3002b;
-  color: #fff;
+  color: #e7eced;
+  box-shadow: 0 0 3px #e7eced;
 }
 
 .button-light {
-  background: #00948a;
-  color: #fff;
+  background: rgba(0, 183, 173, 0.5);
+  box-shadow: 0 0 3px #e7eced;
+  color: #e7eced;
+}
+
+.button-outline {
+  background: transparent;
+  color: #e7eced;
+  border: 1px solid #e7eced;
+  box-shadow: 0 0 3px #e7eced;
 }
 
 .button-small {
   font-size: 15px;
   line-height: 15px;
   padding: 7px 15px;
+}
+
+.button:hover {
+  box-shadow: 0 0 10px #e7eced;
 }

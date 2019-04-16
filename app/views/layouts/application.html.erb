@@ -21,16 +21,16 @@
 <div class="header">
   <div class="container buffer-both-small">
     <div class="header-logo">
-      <h1 class="header-title title-large"><%= link_to 'ask-me', root_path %></h1>
+      <h1 class="header-title title-large"><%= link_to 'ask?me', root_path %></h1>
     </div>
 
     <div class="header-nav">
       <% if current_user %>
-        <%= link_to "@#{current_user.username}", user_path(current_user) %>
-        <%= link_to 'Sign out', log_out_path, class: 'button button-light button-small'%>
+        <%= link_to "@#{current_user.username}", user_path(current_user), class: 'buffer-right-small' %>
+        <%= link_to 'Sign out', log_out_path, class: 'button button-outline button-small' %>
       <% else %>
+        <%= link_to 'Sign in', log_in_path, class: 'button button-outline button-small buffer-right-small' %>
         <%= link_to 'Sign up', sign_up_path, class: 'button button-light button-small' %>
-        <%= link_to 'Sign in', log_in_path, class: 'button button-light button-small'%>
       <% end %>
     </div>
   </div>
@@ -47,6 +47,12 @@
     <% end %>
 
     <%= yield %>
+  </div>
+</div>
+
+<div class="footer">
+  <div class="container buffer-both-small">
+    <%= link_to 'Source code on GitHub', 'https://github.com/just-ed/ask-me', target: '_blank' %>
   </div>
 </div>
 </body>

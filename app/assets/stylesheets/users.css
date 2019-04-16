@@ -4,7 +4,6 @@
 
 .user-header {
   padding: 20px 0;
-  background: #005a55;
   color: white;
 }
 
@@ -16,7 +15,7 @@
   width: 100px;
   height: 100px;
   margin: 0 auto;
-  border: 5px solid #00b6ad;
+  border: 3px solid rgba(0, 183, 173, 0.3);
   border-radius: 50%;
   overflow: hidden;
 }
@@ -24,7 +23,11 @@
 .user-image-div-small {
   width: 75px;
   height: 75px;
-  border-width: 3px;
+  border-width: 2px;
+}
+
+.user-image-div-small:hover {
+  box-shadow: 0 0 10px #e7eced;
 }
 
 .user-image {
@@ -44,13 +47,13 @@
 }
 
 .user-questions {
-  background: #D9E6E5;
+  background: rgba(217, 230, 229, 0.1);
 }
 
 .user-question-form {
   padding: 10px;
   margin-left: 10px;
-  background: #D9E6E5;
+  background: rgba(217, 230, 229, 0.1);
 }
 
 @media (max-width: 960px) {

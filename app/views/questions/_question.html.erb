@@ -4,22 +4,23 @@
       <%= question.text %>
     </div>
 
+    <div class="question-info">
+      <span class="question-date">
+        <%= l(question.created_at, format: :short) %>
+      </span>
+
+      <% if question.author.present? %>
+        <span class="question-author">
+          <%= link_to '@' + question.author.username, user_path(question.author), class: 'question-author' %>
+        </span>
+      <% end %>
+    </div>
+
     <% if question.answer.present? %>
-      <div class="question-answer text-lead">
+      <div class="question-answer text-lead buffer-top">
         <%= question.answer %>
       </div>
     <% end %>
-
-    <div class="question-date">
-      <%= l(question.created_at, format: :short) %>
-    </div>
-
-    <% if question.author.present? %>
-      <div class="question-author">
-        <%= link_to '@' + question.author.username, user_path(question.author) %>
-      </div>
-    <% end %>
-
   </div>
 
   <% if question.user == current_user %>
