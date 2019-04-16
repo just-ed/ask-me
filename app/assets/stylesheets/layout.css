@@ -48,5 +48,6 @@ a {
 }
 
 .footer {
+  padding: 0 40px;
   border-top: solid 1px #00b6ad;
 }
