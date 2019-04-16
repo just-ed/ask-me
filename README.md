@@ -1,24 +1,15 @@
-# README
+# Askme
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Askme is a training Rails app that looks like Ask.fm
 
-Things you may want to cover:
+Go to http://askme2.herokuapp.com to try it.
 
-* Ruby version
+##Usage
 
-* System dependencies
+To use it on your local machine execute:
 
-* Configuration
+```
+bundle install && bundle exec rake db:migrate
+```
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Hope you'll enjoy it :)
