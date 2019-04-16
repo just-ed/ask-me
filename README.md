@@ -1,10 +1,10 @@
 # Askme
 
-Askme is a training Rails app that looks like Ask.fm
+Askme is a training Rails app that looks like Ask.fm.
 
 Go to http://askme2.herokuapp.com to try it.
 
-##Usage
+## Usage
 
 To use it on your local machine execute:
 
