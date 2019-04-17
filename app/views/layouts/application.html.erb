@@ -27,10 +27,10 @@
     <div class="header-nav">
       <% if current_user %>
         <%= link_to "@#{current_user.username}", user_path(current_user), class: 'buffer-right-small' %>
-        <%= link_to 'Sign out', log_out_path, class: 'button button-outline button-small' %>
+        <%= link_to 'Sign out', session_path, data: { method: :delete }, class: 'button button-outline button-small' %>
       <% else %>
-        <%= link_to 'Sign in', log_in_path, class: 'button button-outline button-small buffer-right-small' %>
-        <%= link_to 'Sign up', sign_up_path, class: 'button button-light button-small' %>
+        <%= link_to 'Sign in', new_session_path, class: 'button button-outline button-small buffer-right-small' %>
+        <%= link_to 'Sign up', new_user_path, class: 'button button-light button-small' %>
       <% end %>
     </div>
   </div>
