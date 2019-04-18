@@ -3,7 +3,7 @@
 }
 
 .question {
-  background: #fff;
+  background: rgba(255, 255, 255, 0.05);
   border-radius: 5px;
 }
 
@@ -21,11 +21,11 @@
 }
 
 .question-text {
-  color: #2e2f41;
+  color: #e7eced;
 }
 
 .question-answer {
-  color: #005a55;
+  color: #e7eced;
 }
 
 .question-info {
@@ -37,16 +37,20 @@
 }
 
 .question-date {
-  color: #a0a0a0;
+  color: #e7eced;
 }
 
 .question-actions {
   font-size: 20px;
-  border-top: 1px solid #D9E6E5;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
   text-align: right;
   padding: 10px 15px;
 }
 
 .question-actions a {
   margin-left: 10px;
+}
+
+.question a {
+  color: #bde3f4;
 }

@@ -11,7 +11,7 @@ module ApplicationHelper
     content_tag 'span', '', class: "fa fa-#{icon_class}"
   end
 
-  def user_bg_color(user)
+  def user_avatar_border_color(user)
     if user.bg_color.present?
       user.bg_color
     else
