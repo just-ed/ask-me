@@ -4,7 +4,7 @@ class Hashtag < ApplicationRecord
   has_many :hashtags_questions
   has_many :questions, through: :hashtags_questions
 
-  validates :name, uniqueness: { case_sensitive: false }
+  validates :name, uniqueness: true
 
   def to_param
     name
