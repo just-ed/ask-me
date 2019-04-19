@@ -37,7 +37,11 @@
   background: transparent;
   color: #e7eced;
   border: 1px solid #e7eced;
-  box-shadow: 0 0 3px #e7eced;
+  box-shadow: 0 0 2px #e7eced;
+}
+
+.button-rounded {
+  border-radius: 15px;
 }
 
 .button-small {
