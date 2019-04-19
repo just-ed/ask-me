@@ -7,6 +7,7 @@ gem 'friendly_id'
 gem 'jquery-rails'
 gem 'puma', '~> 3.11'
 gem 'rails', '~> 5.2.2', '>= 5.2.2.1'
+gem 'recaptcha', require: 'recaptcha/rails'
 gem 'uglifier'
 
 group :production do
