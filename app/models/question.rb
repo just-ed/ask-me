@@ -14,8 +14,7 @@ class Question < ApplicationRecord
   def scan_hashtags
     hashtags_questions.clear
 
-    "#{text} #{answer}".scan(Hashtag::REGEXP).uniq.each do |name|
-      name.downcase!
+    "#{text} #{answer}".scan(Hashtag::REGEXP).map(&:downcase).uniq.each do |name|
       hashtags << Hashtag.find_or_create_by!(name: name)
     end
   end
